@@ -19,14 +19,16 @@ alert(cat.favoriteToy.color);
 document.getElementById("title").innerHTML = cat.catName();
 */
 
-// ini Three & Argon
-var options = THREE.Bootstrap.createArgonOptions( Argon.immersiveContext );
-options.renderer = { klass: THREE.WebGLRenderer };
-var three = THREE.Bootstrap( options );
+  // setup Threestrap for Argon
+  var options = THREE.Bootstrap.createArgonOptions( Argon.immersiveContext )
+  var three = THREE.Bootstrap( options )
 
-var light = new THREE.DirectionalLight( 0xffffff, 1 light.position.set( 0, -4, -4 ).normalize()
-three.scene.add( light );
-var pointLight = new THREE.PointLight( 0xffffff, 1.5, 1000 ) three.camera.add(pointLight);
+  // add light to our scene
+  var light = new THREE.DirectionalLight( 0xffffff, 1 )
+    light.position.set( 0, -20, -20 ).normalize()
+    three.scene.add( light )
+  var pointLight = new THREE.PointLight( 0xffffff, 4, 1000 )
+  three.camera.add(pointLight)
 
 Argon.immersiveContext.setRequiredCapabilities('Vuforia');
 
