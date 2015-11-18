@@ -24,7 +24,7 @@ var options = THREE.Bootstrap.createArgonOptions( Argon.immersiveContext );
 options.renderer = { klass: THREE.WebGLRenderer };
 var three = THREE.Bootstrap( options );
 
-var light = new THREE.DirectionalLight( 0xffffff, 1 light.position.set( 0, -4, -4 ).normalize();
+var light = new THREE.DirectionalLight( 0xffffff, 1 light.position.set( 0, -4, -4 ).normalize());
 three.scene.add( light );
 var pointLight = new THREE.PointLight( 0xffffff, 1.5, 1000 ) three.camera.add(pointLight);
 
